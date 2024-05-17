@@ -1,0 +1,4 @@
+repository "2D RPG Ninja@local"
+  path "/"
+    br "/main"
+    co "/main"
