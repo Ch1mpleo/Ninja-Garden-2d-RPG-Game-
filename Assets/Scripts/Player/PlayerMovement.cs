@@ -47,12 +47,11 @@ public class PlayerMovement : MonoBehaviour
         //Đồng thời kiểm tra biến IsMoving
         if (moveDirection ==  Vector2.zero)
         {
-            animations.SetMovingAnimation(false);
+            animations.SetMoveBoolTransition(false);
             return;
         }
-        animations.SetMovingAnimation(true);
-        animations.SetMoveBoolTransition(moveDirection);
-
+        animations.SetMoveBoolTransition(true);
+        animations.SetMoveAnimation(moveDirection);
     }
 
     private void OnEnable()
